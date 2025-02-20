@@ -16,33 +16,22 @@ function App() {
     <div className="bg-black min-h-screen text-white">
       {/* Hero Section */}
       <header className="h-screen relative overflow-hidden hero-gradient">
-        <div className="relative z-20 h-full flex items-center justify-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
-            className="container mx-auto px-4 hero-content"
-          >
-            <div className="max-w-3xl mx-auto text-center">
-              <motion.h1
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                className="text-7xl md:text-9xl font-bold mb-8 tracking-tight"
-              >
-                <span className="gradient-text">Nirvana</span>{" "}
-                <span className="text-white">Ion</span>
-              </motion.h1>
-              <motion.p
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed"
-              >
+        <div className="relative z-20 h-full flex items-center">
+          <div className="container mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="max-w-2xl mx-auto text-center"
+            >
+              <h1 className="text-6xl md:text-8xl font-bold mb-6">
+                <span className="gradient-text">Nirvana</span> Ion
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-300 mb-8">
                 Hey there! I'm Nirvana Ion, boAt's most advanced TWS earbuds. Let me take you on a journey to audio enlightenment.
-              </motion.p>
-            </div>
-          </motion.div>
+              </p>
+            </motion.div>
+          </div>
         </div>
       </header>
 
@@ -53,7 +42,7 @@ function App() {
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="max-w-3xl mx-auto"
+            className="max-w-3xl mx-auto product-image"
           >
             <img
               src="https://i.ibb.co/Qj1Qxr7/boat-nirvana-ion.png"
